@@ -82,7 +82,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Hello,</div>
-                <div class="intro-heading">It's Nice To Meet You!</div>
+                <div class="intro-heading">It's nice to meet you!</div>
                 <a href="#summary" class="page-scroll btn btn-xl">Learn more about me</a>
             </div>
         </div>
@@ -128,14 +128,14 @@
                     <ul id="filter" class="section-subheading text-muted" >
                         <li class="current"><a href="#">All</a></li>
                         <li><a href="#">Engineering</a></li>
-                        <li><a href="#">User Experience</a></li>
+                        <li><a href="#">Human-centered Design</a></li>
                     </ul></h3>
                 </div>
             </div>
             
             <ul id="portfolio" class="row">
-                <li class="design engineering col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <li class="human-centered-design engineering col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioGate" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -146,6 +146,34 @@
                     <div class="portfolio-caption">
                         <h4>Radius Gate Opener</h4>
                         <p class="text-muted">arduino inspired project</p>
+                    </div>
+                </li>
+                <li class="human-centered-design engineering col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioTrac" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/trac-preview.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Trac</h4>
+                        <p class="text-muted">activity tracking tool</p>
+                    </div>
+                </li>
+                <li class="human-centered-design engineering col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioSpin" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/spinglow-preview.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Spin-n-Glow</h4>
+                        <p class="text-muted">a kinetic art project</p>
                     </div>
                 </li>
                 <li class="engineering col-md-4 col-sm-6 portfolio-item">
@@ -177,50 +205,22 @@
                         <p class="text-muted">a new design from ground-up</p>
                     </div>
                 </li>
-
-
-                <li class="design user-experience col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </li>
                 <li class="engineering col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/manifold-preview.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Fluid Cooling Manifold</h4>
+                        <p class="text-muted">an imaging diagnostic subsystem</p>
                     </div>
                 </li>
-                <li class="design col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </li>
+
+
             </ul>
         </div>
     </section>
@@ -231,7 +231,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Timeline</h2>
-                    <h3 class="section-subheading text-muted">about Kamyin Cheng</h3>
+                    <h3 class="section-subheading text-muted">about Kamyin</h3>
                 </div>
             </div>
             <div class="row">
@@ -390,9 +390,11 @@
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
-    <!-- Portfolio Modal 1 -->
+    <!-- Portfolio Gate Opener -->
 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Portfolio Gate Opener-->
+    <div class="portfolio-modal modal fade" id="portfolioGate" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -404,38 +406,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">
-                            <p><i class="fa fa-wrench"></i>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                        <div class="modal-body">
                             <h2>Arduino Gate Opener</h2>
                             <p class="item-intro text-muted">Summer 2010, Radius Product Development</p>
                             <hr>
@@ -446,7 +416,7 @@
                                 </span> Challenge
                             </div>
                             
-                            <p id="portfolio-body">can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                            <p id="portfolio-body">Radius, a product development firm that I was working for one summer, needed a way for staff members to open parking lot gate for client visits without having to send someone to the parking lot each time. There was a version of arduino controller, but that hasn't been working for months.</p>
                             
                             <div id ="portfolio-subheading">
                                 <span class="fa-stack fa-1x">
@@ -454,17 +424,20 @@
                                     <i class="fa fa-refresh fa-stack-1x fa-inverse"></i>
                                 </span> Process
                             </div>
-
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p id="portfolio-body">is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                            
+                            <img class="img-responsive img-centered" src="img/portfolio/gate-process.png" alt="">
                             <div id ="portfolio-subheading">
                                 <span class="fa-stack fa-1x">
                                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                                     <i class="fa fa-check fa-stack-1x fa-inverse"></i>
                                 </span> Result
                             </div>
-                            <p id="portfolio-body"><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/gate-result-1.png" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/gate-result-2.png" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/gate-result-3.png" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/gate-result-4.png" alt="">
+                            <img class="img-responsive img-centered" src="img/portfolio/gate-result-5.png" alt="">
+                            <p id="portfolio-body">Designed ciruitry and electronic packaging; developed web interface and arduino programming; added additional features to enhance user interactions.</p>
 
                             <div id ="portfolio-subheading">
                                 <span class="fa-stack fa-1x">
@@ -472,7 +445,7 @@
                                     <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
                                 </span> Relevant Skills
                             </div>
-                            <p id="portfolio-body">arduino, electrical engineering, 3D printing.</p>
+                            <p id="portfolio-body">Arduino, circutry, electronic packaging, soldering, Solidworks, 3D printing.</p>
 
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -480,6 +453,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
     <!-- Portfolio Modal 3 -->
