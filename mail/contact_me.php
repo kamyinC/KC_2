@@ -9,18 +9,28 @@ if(empty($_POST['name'])  		||
 	return false;
    }
 	
-$name = $_POST['name'];
 $EmailFrom = "$email";
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$EmailTo = "kamyin.cheng@gmail.com";
+$subject = "Contact from kamyincheng.com";
+$name = Trim(stripslashes($_POST['name'])); 
 $email = Trim(stripslashes($_POST['email'])); 
-	
-// Create the email and send the message
-$to = 'kamyin.cheng@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
+$message = Trim(stripslashes($_POST['message'])); 
 
 
-mail($to,$email_subject,$email_body,"From: <$EmailFrom>");
+// prepare email body text
+$body = "";
+$body .="You have receive new message from your website:";
+$body .="\n";
+$body .= "Name: ";
+$body .= $name;
+$body .= "\n";
+$body .= "Email: ";
+$body .= $email;
+$body .= "\n";
+$body .= "Message: ";
+$body .= $message;
+$body .= "\n";
+
+mail($EmailTo, $subject, $body, $EmailFrom);
 return true;			
 ?>
